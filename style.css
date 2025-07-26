@@ -92,3 +92,36 @@ h2 {
     height: 3rem !important;
   }
 }
+/* styles.css */
+
+/* Custom styles if needed */
+a:hover {
+  text-decoration: underline;
+  color: #e67e22;
+}
+
+@media screen and (max-width: 430px) {
+  footer {
+    padding: 20px;
+  }
+
+  footer img {
+    height: 36px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+
+  footer .space-y-2 {
+    margin-bottom: 10px;
+  }
+
+  .space-x-4 > a > img {
+    height: 24px;
+  }
+}
