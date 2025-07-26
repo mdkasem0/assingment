@@ -1,27 +1,41 @@
-
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap');
 
-/* Root Font */
+/* Font Variables */
 :root {
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
 }
 
-/* Body font */
+/* Base Styles */
 body {
   font-family: var(--font-sans);
 }
 
-/* Custom media query for iPhone 14/15 (typical width ~390px–430px) */
-@media (max-width: 430px) {
+h2 {
+  font-family: var(--font-serif);
+}
+
+/* Hover Effect */
+a:hover {
+  text-decoration: underline;
+  color: #e67e22;
+}
+
+/* ---------- Responsive Styles ---------- */
+
+/* iPhone 14/15 and Small Devices (Max Width: 430px) */
+@media screen and (max-width: 430px) {
   header {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
   }
 
   h1 {
     font-size: 18px;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
   }
 
   .cart span {
@@ -31,32 +45,7 @@ body {
   nav {
     display: none !important;
   }
-}
 
-
-/* Custom Heading Font */
-h2 {
-  font-family: 'Playfair Display', serif;
-}
-
-/* Responsive tweaks for small devices */
-@media (max-width: 768px) {
-  section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  h2 {
-    font-size: 1.75rem; /* 28px */
-  }
-
-  p {
-    font-size: 0.875rem; /* 14px */
-  }
-}
-
-@media screen and (max-width: 430px) {
-  /* iPhone 14 & 15 screen sizes */
   .container {
     flex-direction: column;
     max-width: 100%;
@@ -68,19 +57,14 @@ h2 {
     height: auto;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .max-w-\[1140px\] {
+  /* Utility classes */
+  .max-w-[1140px] {
     flex-direction: column !important;
     max-width: 100% !important;
   }
 
   .text-2xl {
-    font-size: 1.25rem !important;
+    font-size: 1.25rem !important; /* 20px */
   }
 
   .p-6 {
@@ -91,16 +75,7 @@ h2 {
     width: 3rem !important;
     height: 3rem !important;
   }
-}
-/* styles.css */
 
-/* Custom styles if needed */
-a:hover {
-  text-decoration: underline;
-  color: #e67e22;
-}
-
-@media screen and (max-width: 430px) {
   footer {
     padding: 20px;
   }
@@ -109,10 +84,7 @@ a:hover {
     height: 36px;
   }
 
-  footer p {
-    font-size: 14px;
-  }
-
+  footer p,
   footer a {
     font-size: 14px;
   }
@@ -123,5 +95,20 @@ a:hover {
 
   .space-x-4 > a > img {
     height: 24px;
+  }
+}
+
+/* Tablets and Smaller Laptops (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  p {
+    font-size: 0.875rem; /* 14px */
   }
 }
