@@ -72,3 +72,23 @@ h2 {
     font-size: 1.5rem;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .max-w-\[1140px\] {
+    flex-direction: column !important;
+    max-width: 100% !important;
+  }
+
+  .text-2xl {
+    font-size: 1.25rem !important;
+  }
+
+  .p-6 {
+    padding: 1rem !important;
+  }
+
+  .w-16 {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+}
